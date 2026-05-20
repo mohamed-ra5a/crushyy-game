@@ -17,8 +17,6 @@ func _physics_process(delta):
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
-		# this code is for player animation and motion controlling ( such as direction or anything related to tthat )
-
 	# Get the input direction: -1, 0, 1
 	var direction = Input.get_axis("ui_left", "ui_right")
 	
